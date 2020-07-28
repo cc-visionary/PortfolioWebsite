@@ -22,4 +22,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgements
 
-Would like to acknowledge [Datasette](http://datassette.net/) for providing [http://musicforprogramming.net/](http://musicforprogramming.net/) where I was able to use [Episode 1: Datasette](http://musicforprogramming.net/?one) for my website.
+Would like to acknowledge [Datasette](http://datassette.net/) for providing [http://musicforprogramming.net/](http://musicforprogramming.net/) which helps me focus whenever I'm coding which is why I used [Episode 1: Datasette](http://musicforprogramming.net/?one) as a main audio for my website.
