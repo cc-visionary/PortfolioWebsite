@@ -1,0 +1,31 @@
+#music_controller {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    // font-size: 16px;
+    border-radius: 5px;
+    color: $primary-color;
+    z-index: 10;
+    margin: 10px;
+    border: 2px solid $primary-color;
+    padding: 2px;
+
+    a {
+        margin: 0 20px;
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    i {
+        color: $primary-color;
+        transition: all 0.2s ease-in;
+    }
+
+    i:hover {
+        transform: translateX(5px);
+    }
+}

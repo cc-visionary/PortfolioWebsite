@@ -1,0 +1,70 @@
+$loadingTime: 9s;
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(600%);
+
+    .active {
+        transform: translateX(0);
+    }
+
+    .inactive {
+        transform: translateX(250%);
+    }
+
+    .wrapper {
+        background-color: $white-color;
+        transition: all 1s ease-in-out;
+        
+        .bg {
+            background-color: $primary-color;
+            animation: loading $loadingTime linear;
+        }
+        
+        .el{
+            z-index: 1;
+            width: 400px;
+            font-weight: bold;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+
+            &:after {
+                padding-left: 20px;
+                content: "Are you ready?";
+                text-align: center;
+                display: block;
+                font-size: 20px;
+                padding: 10px 20px;
+                color: $white-color;
+                mix-blend-mode: difference;
+                animation: text $loadingTime linear;
+            }
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    
+        @keyframes text {
+            0% {opacity: 0;}
+            5% {opacity: 1;content: "Are you ready?"}
+            22% {opacity: 1;content: "Are you ready?"}
+            27% {opacity: 0;}
+            32% {opacity: 1; content: "You are about to meet..."}
+            49% {opacity: 1; content: "You are about to meet..."}
+            54% {opacity: 0;;}
+            59% {opacity: 1; content: "The one and only person..."}
+            76% {opacity: 1; content: "The one and only person..."}
+            81% {opacity: 0;;}
+            86% {opacity: 1; content: "you'll ever hate ❤"}
+            100% {opacity: 1; content: "you'll ever hate ❤"}
+        }
+    }
+}

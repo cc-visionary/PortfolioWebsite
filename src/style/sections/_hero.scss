@@ -1,0 +1,119 @@
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  /* background: url("/src/assets/[your-image].png");
+  background-position: center;
+  background-size: cover; */
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+  .top_line {
+    float: right;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+
+    .top_horizontal {
+      border: 1px;
+      color: $primary-color;
+      background-color: $primary-color;
+      height: 5px;
+      width: 30px;
+      border-color: $primary-color;
+    }
+  
+    .top_vertical {
+      position: relative;
+      left: 25px;
+      bottom: 5px;
+      border: 1px;
+      color: $primary-color;
+      background-color: $primary-color;
+      height: 30px;
+      width: 5px;
+      border-color: $primary-color;
+    }
+  }
+  
+  .bottom_line {
+    float: left;
+    position: relative;
+    right: 30px;
+
+    .bottom_horizontal {
+      position: relative;
+      top: 30px;
+      border: 1px;
+      color: $primary-color;
+      background-color: $primary-color;
+      height: 5px;
+      width: 30px;
+      border-color: $primary-color;
+    }
+  
+    .bottom_vertical {
+      border: 1px;
+      color: $primary-color;
+      background-color: $primary-color;
+      height: 30px;
+      width: 5px;
+      border-color: $primary-color;
+    }
+  }
+  
+  .hero-title {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}

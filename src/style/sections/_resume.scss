@@ -1,0 +1,34 @@
+#resume {
+    position: fixed;
+    top: 20%;
+    margin-top: -300px; /* minus half the height */
+    color: $primary-color;
+    margin: $default-font-size $default-font-size;
+    z-index: 1;
+
+    .social-links {
+      display: flex;
+      margin-top: 1rem;
+      flex-direction: column;
+      justify-content: start;
+    
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $primary-color;
+        font-size: 2rem;
+        width: 5rem;
+        height: 4rem;
+
+        i {
+            color: $primary-color;
+            transition: all 0.2s ease-in;
+        }
+    
+        i:hover {
+          transform: translateX(5px);
+        }
+      }
+    }
+}
