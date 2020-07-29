@@ -55,16 +55,18 @@ $loadingTime: 6s;
         @keyframes text {
             0% {opacity: 0;}
             5% {opacity: 1;content: "Are you ready?"}
-            22% {opacity: 1;content: "Are you ready?"}
-            27% {opacity: 0;}
-            32% {opacity: 1; content: "You are about to meet..."}
-            49% {opacity: 1; content: "You are about to meet..."}
-            54% {opacity: 0;;}
-            59% {opacity: 1; content: "The one and only person..."}
-            76% {opacity: 1; content: "The one and only person..."}
-            81% {opacity: 0;;}
-            86% {opacity: 1; content: "you'll ever hate ❤"}
-            100% {opacity: 1; content: "you'll ever hate ❤"}
+            20% {opacity: 1;content: "Are you ready?"}
+            25% {opacity: 0;}
+            30% {opacity: 1; content: "You are about to meet..."}
+            45% {opacity: 1; content: "You are about to meet..."}
+            50% {opacity: 0;;}
+            55% {opacity: 1; content: "The one and only person..."}
+            70% {opacity: 1; content: "The one and only person..."}
+            75% {opacity: 0;;}
+            80% {opacity: 1; content: "you'll ever hate ❤️"}
+            95% {opacity: 1; content: "you'll ever hate ❤️"}
+            97% {opacity: 0;}
+            100% {opacity: 1; content: "Are you ready?"}
         }
     }
 }
