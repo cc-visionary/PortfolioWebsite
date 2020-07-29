@@ -30,13 +30,14 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-emoji-render": "^1.2.4",
     "react-github-btn": "^1.2.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.16",
     "react-text-glitch": "^0.0.4",
+    "react-text-loop": "^2.3.0",
     "react-tilt": "^0.1.4",
-    "react-typing-animation": "^1.6.2",
     "yarn": "^1.22.4"
   },
   "devDependencies": {

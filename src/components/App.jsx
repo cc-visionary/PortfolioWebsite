@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import MusicController from './MusicController/MusicController'
 import Hero from './Hero/Hero';
 import Resume from './Resume/Resume';
 import About from './About/About';
@@ -28,7 +27,6 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
-      <MusicController />
       <Hero />
       <About />
       <Projects />

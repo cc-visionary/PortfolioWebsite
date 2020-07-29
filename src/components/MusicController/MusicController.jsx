@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import audio_file from '../../audios/music_for_programming_1-datassette.mp3'
 import Fade from 'react-reveal/Fade';
 
 export default class MusicController extends Component {
@@ -15,7 +14,6 @@ export default class MusicController extends Component {
     }
 
   playPause = () => {
-    console.log(this.audio)
     this.setState({
       play: this.state.play == 'Play' ? 'Pause' : 'Play',
       icon: this.state.play == 'Play' ? <i className='fa fa-pause' /> : <i className='fa fa-play' />
@@ -64,7 +62,7 @@ export default class MusicController extends Component {
   }
 
   componentDidMount = () => {
-    this.audio = new Audio(audio_file)
+    this.audio = this.props.audio
     this.audio.loop = true
     this.audio.autoplay = true
     // this.playPause()

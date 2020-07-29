@@ -1,8 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import TextLoop from "react-text-loop";
+import Emoji from 'react-emoji-render';
 import { Link } from 'react-scroll';
-import Typing from 'react-typing-animation';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
@@ -38,13 +39,14 @@ const Header = () => {
               {title}{' '}
               <span className="text-color-main">{name}</span>
               <br />
-              {subtitle}
-              <Typing speed={20} loop>
-                 Machine Learning Expert
-                <Typing.Backspace count={40} delay={1500}  />
-                Data Scientist
-                <Typing.Backspace speed={50} count={16} delay={1500} />
-              </Typing>
+              {subtitle}{subtitle && <br />}
+              <TextLoop springConfig={{ stiffness: 180, damping: 12 }}>
+                <Emoji text="Machine Learning Enthusiast🤖" />
+                <Emoji text="Software Developer🐱‍💻" />
+                <Emoji text="Problem Solver🕵️‍♂️" />
+                <Emoji text="Baller🏀" />
+                <Emoji text="Lover😍" />
+              </TextLoop>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

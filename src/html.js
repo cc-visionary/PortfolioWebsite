@@ -18,7 +18,7 @@ export default function HTML({
     <html {...htmlAttributes}>
       <head>
         <link rel="shortcut icon" type="image/png" href={icon} />
-        <meta charSet="utf-8" />
+        <meta charSet="UTF-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {headComponents}

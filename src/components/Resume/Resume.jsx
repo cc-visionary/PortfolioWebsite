@@ -46,10 +46,9 @@ const Resume = () => {
                 networks.map((network, i) => {
                 const { id, name, alt, url } = network;
                 return (
-                    <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={250 * i} distance="30px">
+                    <Fade key={id} left={isDesktop} bottom={isMobile} duration={1000} delay={250 * i} distance="30px">
                         <a
                         style={isMobile ? {margin: '0 -7.5px'} : {}}
-                        key={id}
                         href={url}
                         rel="noopener noreferrer"
                         target="_blank"

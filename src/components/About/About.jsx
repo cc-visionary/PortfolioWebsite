@@ -46,10 +46,10 @@ const About = () => {
                     {skills && 
                       skills.map((skill, i) => {
                         return (
-                          <Fade delay={1250 + (250 * i)}>
+                          <Fade key={i} delay={1250 + (250 * i)}>
                             <li>{skill}</li>
                           </Fade>
-                          )
+                        )
                       })
                     }
                   </ul>
