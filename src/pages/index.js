@@ -24,7 +24,7 @@ export default class Main extends Component {
 
   componentDidMount = () => {
     this.audio = new Audio(audio_file)
-    this.sleep(1000).then(() => {
+    this.sleep(6000).then(() => {
       this.setState({loading: false})
     })
   }

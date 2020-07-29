@@ -42,7 +42,7 @@ const Header = () => {
               {subtitle}{subtitle && <br />}
               <TextLoop springConfig={{ stiffness: 180, damping: 12 }}>
                 <Emoji text="Machine Learning Enthusiast🤖" />
-                <Emoji text="Software Developer🐱‍💻" />
+                <Emoji text="Software Developer💻" />
                 <Emoji text="Problem Solver🕵️‍♂️" />
                 <Emoji text="Baller🏀" />
                 <Emoji text="Lover😍" />
