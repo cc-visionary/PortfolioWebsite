@@ -24,9 +24,10 @@ export default class Main extends Component {
 
   componentDidMount = () => {
     this.audio = new Audio(audio_file)
-    this.sleep(6000).then(() => {
-      this.setState({loading: false})
-    })
+    this.sleep(6000)
+      .then(() => {
+        this.setState({loading: false})
+      })
   }
 
   render() {
@@ -51,7 +52,7 @@ export default class Main extends Component {
           <meta property="og:audio:type" content="audio/mp3" />
         </Helmet>
         <Loading loading={this.state.loading} />
-      { !this.state.loading && <MusicController audio={this.audio} /> }
+        { !this.state.loading && <MusicController audio={this.audio} /> }
         { !this.state.loading && <App />}
       </>
     );

@@ -7,11 +7,11 @@ $loadingTime: 6s;
     transform: translateY(600%);
 
     .active {
-        transform: translateX(0);
+        opacity: 1;
     }
 
     .inactive {
-        transform: translateX(250%);
+        opacity: 0;
     }
 
     .wrapper {
@@ -32,7 +32,7 @@ $loadingTime: 6s;
 
             &:after {
                 padding-left: 20px;
-                content: "Are you ready?";
+                content: "-";
                 text-align: center;
                 display: block;
                 font-size: 20px;
@@ -62,11 +62,10 @@ $loadingTime: 6s;
             50% {opacity: 0;;}
             55% {opacity: 1; content: "The one and only person..."}
             70% {opacity: 1; content: "The one and only person..."}
-            75% {opacity: 0;;}
+            75% {opacity: 0;}
             80% {opacity: 1; content: "you'll ever hate ❤️"}
             95% {opacity: 1; content: "you'll ever hate ❤️"}
-            97% {opacity: 0;}
-            100% {opacity: 1; content: "Are you ready?"}
+            100% {opacity: 0;content: '-'}
         }
     }
 }

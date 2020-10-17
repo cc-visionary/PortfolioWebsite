@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import TextLoop from "react-text-loop";
-import Emoji from 'react-emoji-render';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
@@ -39,13 +38,13 @@ const Header = () => {
               {title}{' '}
               <span className="text-color-main">{name}</span>
               <br />
-              {subtitle}{subtitle && <br />}
+              {subtitle}{subtitle && ' '}
               <TextLoop springConfig={{ stiffness: 180, damping: 12 }}>
-                <Emoji text="Machine Learning Enthusiast🤖" />
-                <Emoji text="Software Developer💻" />
-                <Emoji text="Problem Solver🕵️‍♂️" />
-                <Emoji text="Baller🏀" />
-                <Emoji text="Lover😍" />
+                <span>ML{isMobile ? <br/> : ' '}Enthusiast🤖</span>
+                <span>Software{isMobile ? <br/> : ' '}Developer💻</span>
+                <span>Problem{isMobile ? <br/> : ' '}Solver🕵️‍♂️</span>
+                <span>Baller🏀</span>
+                <span>Lover😍</span>
               </TextLoop>
           </h1>
         </Fade>
