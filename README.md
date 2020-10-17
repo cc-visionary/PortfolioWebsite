@@ -1,4 +1,4 @@
-# My Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/cc-visionary/PortfolioWebsite?color=blue)](https://github.com/cc-visionary/PortfolioWebsite/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cc-visionary/PortfolioWebsite) ![GitHub forks](https://img.shields.io/github/forks/cc-visionary/PortfolioWebsite)
+# My Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/cc-visionary/PortfolioWebsite?color=blue)](https://github.com/cc-visionary/PortfolioWebsite/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cc-visionary/PortfolioWebsite) ![GitHub forks](https://img.shields.io/github/forks/cc-visionary/PortfolioWebsite)
 
 ## Screenshots
 
