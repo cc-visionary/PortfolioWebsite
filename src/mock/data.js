@@ -21,14 +21,15 @@ export const aboutData = {
   img: 'profile.jpg',
   main: "I am a 1st year college student, taking BS Computer Science in De Lasalle University, who's passion is coding. Ever since I was 16, I have learned more about programming non-stop. Now I have gathered lots of knowledge and experience which I believe I can put into good use.",
   skills: [
-    "Machine Learning with TensorFlow, PyTorch, and FastAI",
-    'Web Development with ReactJS',
+    // "Machine Learning with TensorFlow, PyTorch, and FastAI",
+    'Front-End Web Development with ReactJS or VueJS',
+    'Back-End Web Development with ExpressJS',
     'Mobile Development with React Native',
     "Software Development with Python's Tkinter",
     "Webscraping with Python's Selenium or Scrapy",
   ],
   status: 'I\'m currently freelancing at Upwork, so feel free to contact me if you wish to hire me.',
-  resume: 'https://drive.google.com/file/d/1tKkOvONqfCdeU8_AnWTkRc8WUSBe1KmK/view?usp=sharing', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1yZ3gQiVPOsMKS-RKOVWuQqsqp4Nl_vZm/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -97,7 +98,7 @@ export const footerData = {
       id: nanoid(),
       name: 'briefcase',
       alt: 'Upwork',
-      url: 'https://www.upwork.com/fl/ccvisionary',
+      url: 'https://www.upwork.com/freelancers/~015213e9868a26cfed',
     },
     {
       id: nanoid(),
